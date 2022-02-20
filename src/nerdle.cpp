@@ -8,17 +8,21 @@
 
 ExpressionGenerator::ExpressionGenerator(int len) : len(len) {}
 
+const std::unordered_map<char, std::function<double(double, double)>>
+    ExpressionGenerator::opfun{{'+', std::plus<double>()},
+                               {'-', std::minus<double>()},
+                               {'*', std::multiplies<double>()},
+                               {'/', std::divides<double>()}};
+
 // Process a new term found by combining two existing terms
-void ExpressionGenerator::process(
-    const term& t1, const term& t2, char opchar,
-    const std::function<double(double, double)>& opfun, bool haspm,
-    bool hasmd) {
+void ExpressionGenerator::process(const term& t1, const term& t2, char opchar,
+                                  bool haspm, bool hasmd) {
   auto newexpr = t1.expr + opchar + t2.expr;
   // First check if the term has been processed already
   if (seen.count(newexpr)) return;
 
   // Store it
-  terms.push_back({newexpr, opfun(t1.val, t2.val), haspm, hasmd});
+  terms.push_back({newexpr, opfun.at(opchar)(t1.val, t2.val), haspm, hasmd});
   seen.insert(newexpr);
 
   // If the value of the expression is an integer that completes the equation,
@@ -52,13 +56,13 @@ void ExpressionGenerator::generate() {
       for (int j = 0; j < N; ++j) {
         term t2{terms[j]};
         if (t1.expr.size() + t2.expr.size() > 5) break;
-        process(t1, t2, '+', std::plus<double>(), true, t1.hasmd or t2.hasmd);
+        process(t1, t2, '+', true, t1.hasmd or t2.hasmd);
         if (t2.haspm) continue;
-        process(t1, t2, '-', std::minus<double>(), true, t1.hasmd or t2.hasmd);
+        process(t1, t2, '-', true, t1.hasmd or t2.hasmd);
         if (t1.haspm or t2.haspm) continue;
-        process(t1, t2, '*', std::multiplies<double>(), false, true);
+        process(t1, t2, '*', false, true);
         if (t2.hasmd or t2.val < 1e-6) continue;
-        process(t1, t2, '/', std::divides<double>(), false, true);
+        process(t1, t2, '/', false, true);
       }
     }
     // Stop when no new term has been added

@@ -24,9 +24,10 @@ class ExpressionGenerator {
   std::unordered_set<std::string> seen;  // Already processed expressions
   std::vector<std::string> equations;    // Complete valid equations
 
-  void process(const term& t1, const term& t2, char opchar,
-               const std::function<double(double, double)>& opfun, bool haspm,
+  void process(const term& t1, const term& t2, char opchar, bool haspm,
                bool hasmd);  // Process a new term found by combining two
+  static const std::unordered_map<char, std::function<double(double, double)>>
+      opfun; // Functions corresponding to different operators
 };
 
 #endif
