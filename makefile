@@ -41,4 +41,4 @@ octordle: wordle
 .phony: clean
 clean:
 	@echo "Cleaning"
-	@rm -f src/*.o wordle nerdle crosswordle
+	@rm -f src/*.o wordle nerdle crosswordle dordle quordle octordle
