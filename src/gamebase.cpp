@@ -3,6 +3,7 @@
 #include <fstream>
 #include <unordered_map>
 
+// Constructor: Also reads word lists
 GameBase::GameBase(const std::string& dictionaryfilename,
                    const std::string& candidatefilename,
                    const std::string& responsecolors)

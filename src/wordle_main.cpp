@@ -18,10 +18,16 @@ void usage(std::ostream &out) {
       << "Number of attempts" << std::endl;
 }
 
+// Wordle main function
+// Multiple boards and game length are passed as command line arguments
 int main(int argc, char *argv[]) {
   int num_boards = 1, num_attempts = 6;
+
+  // Default arguments
   std::map<std::string, std::pair<int *, std::string>> optionmap{
       {"-b", {&num_boards, "boards"}}, {"-a", {&num_attempts, "attempts"}}};
+
+  // Process options. Simple sanitisation as everything is of the form -x y
   for (int i = 1; i < argc; i += 2) {
     if (!optionmap.count(argv[i])) {
       std::cerr << "Unknown argument " << argv[i] << "\n";
@@ -51,6 +57,8 @@ int main(int argc, char *argv[]) {
     }
     *ptr = x;
   }
+
+  // Now just create the boards and play
   if (num_boards > 1)
     std::cout << "Wordle game with " << num_boards << " boards\n";
   Wordle G(num_boards, num_attempts, "data/dictionary.txt", "data/candidates.txt",

@@ -5,6 +5,7 @@
 #include <numeric>
 #include <unordered_map>
 
+// Constructor: Call base constructor and initialise boards
 Wordle::Wordle(int num_boards, int num_attempts,
            const std::string& dictionaryfilename,
            const std::string& candidatefilename,
@@ -18,6 +19,8 @@ Wordle::Wordle(int num_boards, int num_attempts,
   boards = std::vector<board>(num_boards, B);
 }
 
+// If no words remain in a board, game cannot be solved
+// If only one word remains in some board, optimal to play it now
 bool Wordle::sanitize() {
   for (int i = 0; i < num_boards; ++i) {
     if (!boards[i].first) continue;
@@ -76,26 +79,27 @@ std::string Wordle::bestguess() {
 // Prune the remaining words so that only the words which give
 //   the received response to out last attempt are retained
 void Wordle::prune(board& B, std::string attempt, std::string response) {
+  auto& [state, remaining] = B;
   if (response == std::string(word_length, responsecolors[0])) {
-    B.first = false;
+    state = false;
     return;
   }
 
   std::vector<int> pruned;
-  for (int i : B.second)
+  for (int i : remaining)
     if (match(index[i], attempt) == response) pruned.push_back(i);
-  B.second = pruned;
+  remaining = pruned;
 }
 
 void Wordle::play() {
-  // We have only six attempts
-  for (int i = 1, done = 0;; ++i) {
+  // We have only given number of attempts
+  for (int i = 1, done = 0; i <= num_attempts; ++i) {
     std::string response;
 
     if (!sanitize()) goto BPP;
     if (nextguess.empty()) nextguess = bestguess();
 
-    // Make the guess and wait for the response from the user
+    // Make the guess and read the response from the user
     std::cout << "Guess " << i << ". " << nextguess << "\n";
     for (int j = 0; board & B : boards) {
       std::string boardstring =
