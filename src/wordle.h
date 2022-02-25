@@ -28,6 +28,7 @@ class Wordle : public GameBase {
   bool sanitize();          // Process singleton and null sets
   // Prune word list to only those giving the current response
   void prune(board& B, std::string attempt, std::string response);
+  double cost(std::string attempt);
 };
 
 #endif
