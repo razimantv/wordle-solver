@@ -123,7 +123,7 @@ void Wordle::play() {
   for (int i = 1, done = 0; i <= num_attempts; ++i) {
     std::string response;
 
-    if (!sanitize()) goto BPP;
+    if (!sanitize()) break;
     if (nextguess.empty()) nextguess = bestguess();
 
     // Make the guess and read the response from the user
@@ -150,6 +150,5 @@ void Wordle::play() {
     }
     nextguess.clear();
   }
-BPP:;
   std::cout << "Game could not be solved\n";
 }

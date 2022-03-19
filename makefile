@@ -2,7 +2,7 @@ CXX ?= g++
 CXXFLAGS = -W -Wall -Wno-unused-result -Wno-sign-compare -O3 \
 					 -I src -std=c++20
 
-all: wordle nerdle crosswordle dordle quordle octordle
+all: wordle nerdle crosswordle dordle quordle octordle squareword
 
 wordle: src/gamebase.o src/wordle.o src/wordle_main.o
 	@echo "Building" $@
@@ -33,6 +33,11 @@ octordle: wordle
 	@echo "#/bin/bash" > $@
 	@echo "./wordle -b 8 -a 13" > $@
 	@chmod +x $@
+
+squareword: src/gamebase.o src/squareword.o src/squareword_main.o \
+		src/squarewordgenerator.o
+	@echo "Building" $@
+	@$(CXX) -o $@ $^ $(CXXFLAGS)
 
 %.o: %.cpp
 	@echo "Compiling" $<
