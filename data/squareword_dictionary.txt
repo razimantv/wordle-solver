@@ -192,6 +192,8 @@ beard
 beast
 beech
 beefy
+beers
+beets
 befit
 began
 begat
@@ -359,6 +361,7 @@ canon
 caper
 caput
 carat
+carer
 cargo
 carol
 carry
@@ -372,9 +375,11 @@ cater
 catty
 caulk
 cause
+caves
 cavil
 cease
 cedar
+celeb
 cello
 chafe
 chaff
@@ -431,6 +436,7 @@ clamp
 clams
 clang
 clank
+claps
 clash
 clasp
 class
@@ -449,6 +455,7 @@ clock
 clone
 close
 cloth
+clots
 cloud
 clout
 clove
@@ -471,6 +478,7 @@ comic
 comma
 conch
 condo
+conga
 conic
 copse
 coral
@@ -524,6 +532,7 @@ crock
 crone
 crony
 crook
+crore
 cross
 croup
 crowd
@@ -547,11 +556,13 @@ cutie
 cyber
 cycle
 cynic
+cysts
 daddy
 daily
 dairy
 daisy
 dally
+dames
 dance
 dandy
 dated
@@ -592,6 +603,7 @@ digit
 dilly
 dimes
 dimly
+dinar
 diner
 dingo
 dingy
@@ -807,6 +819,7 @@ flare
 flash
 flask
 fleck
+flees
 fleet
 flesh
 flick
@@ -864,6 +877,7 @@ frill
 frisk
 fritz
 frock
+frogs
 frond
 front
 frost
@@ -886,6 +900,7 @@ gaffe
 gaily
 galas
 gamer
+games
 gamma
 gamut
 gassy
@@ -943,13 +958,16 @@ gooey
 goofy
 goose
 gorge
+gotta
 gouge
 gourd
 grace
 grade
+grads
 graft
 grail
 grain
+grams
 grand
 grant
 grape
@@ -1017,6 +1035,7 @@ harts
 haste
 hasty
 hatch
+hated
 hater
 haunt
 haute
@@ -1046,6 +1065,7 @@ hives
 hoard
 hobby
 hoist
+holds
 holed
 holly
 homer
@@ -1080,6 +1100,7 @@ hyper
 icily
 icing
 ideal
+ideas
 idiom
 idiot
 idler
@@ -1094,6 +1115,7 @@ inane
 inbox
 incur
 index
+indie
 inept
 inert
 infer
@@ -1107,6 +1129,7 @@ inter
 intro
 ionic
 irate
+irons
 irony
 islet
 issue
@@ -1137,6 +1160,7 @@ karma
 kayak
 kebab
 khaki
+kinda
 kinky
 kiosk
 kitty
@@ -1156,9 +1180,11 @@ krill
 krone
 label
 labor
+laced
 laden
 ladle
 lager
+lamas
 lance
 lanes
 lanky
@@ -1166,7 +1192,9 @@ lapel
 lapse
 large
 larva
+laser
 lasso
+lasts
 latch
 later
 lathe
@@ -1207,6 +1235,7 @@ limit
 lined
 linen
 liner
+lines
 lingo
 lipid
 lithe
@@ -1273,6 +1302,8 @@ manic
 manly
 manna
 manor
+manse
+manta
 maple
 march
 marge
@@ -1283,6 +1314,7 @@ masse
 masts
 match
 matey
+matte
 mauve
 maven
 maxim
@@ -1315,6 +1347,7 @@ mimic
 mince
 miner
 minim
+minis
 minor
 minty
 minus
@@ -1324,9 +1357,11 @@ miser
 missy
 moats
 mocha
+mocks
 modal
 model
 modem
+modes
 mogul
 moist
 molar
@@ -1464,11 +1499,13 @@ pagan
 paint
 paler
 palsy
+panda
 panel
 panic
 pansy
 pants
 papal
+papas
 paper
 pared
 parer
@@ -1501,6 +1538,7 @@ penne
 penny
 perch
 peril
+perks
 perky
 pesky
 pesto
@@ -1575,6 +1613,7 @@ prank
 prawn
 preen
 press
+preys
 price
 prick
 pride
@@ -1668,6 +1707,7 @@ rayon
 razor
 reach
 react
+reads
 ready
 realm
 rearm
@@ -1690,6 +1730,7 @@ relic
 remit
 renal
 renew
+rents
 repay
 repel
 reply
@@ -1729,6 +1770,7 @@ rocky
 rodeo
 roger
 rogue
+roles
 roman
 rondo
 roomy
@@ -1775,6 +1817,7 @@ saner
 sappy
 sarge
 sarin
+saris
 sassy
 satin
 satyr
@@ -1792,10 +1835,12 @@ scalp
 scaly
 scamp
 scams
+scans
 scant
 scare
 scarf
 scars
+scart
 scary
 scene
 scent
@@ -1819,11 +1864,15 @@ scrub
 scrum
 scuba
 seals
+seams
+sears
+seats
 sects
 sedan
 seedy
 segue
 seize
+sells
 semen
 sense
 sepal
@@ -1908,6 +1957,7 @@ siren
 sissy
 sitar
 sited
+sites
 sixth
 sixty
 skate
@@ -1984,9 +2034,11 @@ snowy
 snuck
 snuff
 soapy
+soars
 sober
 soggy
 solar
+soles
 solid
 solve
 sonar
@@ -2049,6 +2101,7 @@ spurt
 squad
 squat
 squib
+stabs
 stack
 staff
 stage
@@ -2161,6 +2214,7 @@ swung
 synod
 syrup
 tabby
+tabla
 table
 taboo
 tacit
@@ -2250,6 +2304,7 @@ tonal
 toner
 tonga
 tonic
+tonne
 tooth
 topaz
 topic
@@ -2272,6 +2327,7 @@ trail
 train
 trait
 tramp
+traps
 trash
 trawl
 tread
@@ -2347,6 +2403,7 @@ unzip
 upper
 upset
 urban
+urged
 urine
 usage
 users
@@ -2454,6 +2511,7 @@ wince
 winch
 windy
 wiper
+wired
 wiser
 wispy
 witch

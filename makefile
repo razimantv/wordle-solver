@@ -46,4 +46,4 @@ squareword: src/gamebase.o src/squareword.o src/squareword_main.o \
 .phony: clean
 clean:
 	@echo "Cleaning"
-	@rm -f src/*.o wordle nerdle crosswordle dordle quordle octordle
+	@rm -f src/*.o wordle nerdle crosswordle dordle quordle octordle squareword
