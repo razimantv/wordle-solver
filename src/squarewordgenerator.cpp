@@ -1,4 +1,5 @@
 #include "squarewordgenerator.h"
+#include <algorithm>
 #include <numeric>
 
 SquareWordGenerator::SquareWordGenerator(int word_length,

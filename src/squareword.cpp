@@ -1,5 +1,6 @@
 #include "gamebase.h"
 #include "squarewordgenerator.h"
+#include <algorithm>
 #include <cassert>
 #include <fstream>
 #include <iostream>
